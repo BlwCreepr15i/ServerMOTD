@@ -1,0 +1,21 @@
+# Customizable MOTD
+# Input a string, color code is allowed (Example: &aThis is Green)
+# (Title is the first line of MOTD, subtitle is the second line of MOTD)
+server-motd:
+  title: '             &6SERVER NAME &c[1.19 - 1.20]   '
+  subtitle: '          &e&lNEW MINIGAME &c+ &a&lSERVER UPDATE'
+
+
+# Player Count and Limit
+# The maximum player the server would handle;
+player-limit: 50
+# The players that are currently in the server, the plugin would pick a random number between
+# the given range to show on the menu.
+# Put -1 for both if you want real player count that is currently in the server.
+# Put the same number for min and max if you want a fixed count.
+# Example: putting 0 at min, 7 at max, the plugin would only choose number [0, 7), 7 is exclusive
+min-player-count: 0
+max-player-count: 7
+
+# If the player pings the server using the wrong version, the plugin would show them the message
+version-message: 'Connect with 1.19+'

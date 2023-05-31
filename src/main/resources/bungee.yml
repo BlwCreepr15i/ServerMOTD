@@ -1,0 +1,4 @@
+name: ServerMOTD
+version: '${project.version}'
+main: com.blwcreepr.servermotd.ServerMOTD
+description: A bungeecord plugin that provides customizable, fancy MOTD
