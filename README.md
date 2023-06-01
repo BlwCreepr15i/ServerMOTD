@@ -4,10 +4,17 @@ Many servers use the similar way this plugin does in order to make its glowing a
 The following Server MOTD is made possible using this plugin: <br>
 ![](https://media.discordapp.net/attachments/880425820861132810/1010684857581572166/unknown.png?width=976&height=141)
 # Get Started
-Just like other Bungeecord plugins, after downloading the file, putting it into the plugin folder of your Bungeecord server.
-It is not the plugin folder of the sub-servers, but the Bungeecord that manages all the sub-servers. <br>
+As a Bungeecord plugin, it can only be run with a Bungeecord server. 
+Assume that a Bungeecord Minecraft server has been set up already,
+download the plugin's .jar file and place it in `plugins` folder. 
+The folder should already exist and is at the same directory with a `bungeecord.jar`. <br>
+
+Don't have a Bungeecord server? [Click here](https://www.spigotmc.org/wiki/bungeecord-installation/#installing-bungeecord-on-windows)
+to set one up.
+## More Information
 ### config.yml
-Some configurations are needed to make it looks more personal and pretty. There are detailed explanation in the `config.yml` too and most of those are self-explanatory, so you do not have to follow this guide to get started.<br>
+Some configurations are needed to make it looks more personal and pretty. 
+There are detailed explanation in the `config.yml` too, and most of those are self-explanatory, so you do not have to follow this guide to get started.<br>
 
 `title` and `subtitle` - To customize the title and subtitle of the displayed MOTD, put it as in String format using single quotation marks surround it. 
 Because the text does not automatically get centered, so some spaces or tabs might be needed to make it centered.
@@ -21,4 +28,8 @@ Minecraft color codes also work, instead of using color sign `§`, replace it wi
 
 `version-message` - The message that a player would see when pinging the MOTD menu with the wrong version. <br> 
 (Note: This is bugged currently, and player would see it even when connecting with the right minecraft version)
+### Dependencies
+The plugin code is using several APIs as dependencies:
+- [Bungeecord API by SpigotMC](https://github.com/SpigotMC/BungeeCord)
+- Maven API
 #
