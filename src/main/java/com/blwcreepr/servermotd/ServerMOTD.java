@@ -1,6 +1,5 @@
 package com.blwcreepr.servermotd;
 
-import com.blwcreepr.servermotd.commands.PingCommand;
 import com.blwcreepr.servermotd.commands.ServerMOTDCommand;
 import com.blwcreepr.servermotd.listener.PingServerListener;
 import net.md_5.bungee.api.Favicon;
@@ -37,7 +36,6 @@ public final class ServerMOTD extends Plugin {
         System.out.println("ServerMOTD has loaded!");
 
         // Command Registration
-        ProxyServer.getInstance().getPluginManager().registerCommand(this, new PingCommand());
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new ServerMOTDCommand());
 
         // Listener Registration
