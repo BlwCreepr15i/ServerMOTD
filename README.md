@@ -3,18 +3,31 @@ A Minecraft Bungeecord plugin displays fancy text when client pings the multipla
 Many servers use the similar way this plugin does in order to make its glowing and shiny MOTD on the multiplayer menu. <br>
 The following Server MOTD is made possible using this plugin: <br>
 ![](https://media.discordapp.net/attachments/880425820861132810/1010684857581572166/unknown.png?width=976&height=141)
-## Get Started
+# Get Started
 As a Bungeecord plugin, it can only be run with a Bungeecord server. 
 Assume that a Bungeecord Minecraft server has been set up already,
 download the plugin's .jar file and place it in `plugins` folder. 
 The folder should already exist and is at the same directory with a `bungeecord.jar`. <br>
 
 Don't have a Bungeecord server? [Click here](https://www.spigotmc.org/wiki/bungeecord-installation/#installing-bungeecord-on-windows)
-to set one up.<br>
+to set one up.
+## More Information
+### config.yml
+Some configurations are needed to make it looks more personal and pretty. 
+There are detailed explanation in the `config.yml` too, and most of those are self-explanatory, so you do not have to follow this guide to get started.<br>
 
+`title` and `subtitle` - To customize the title and subtitle of the displayed MOTD, put it as in String format using single quotation marks surround it. 
+Because the text does not automatically get centered, so some spaces or tabs might be needed to make it centered.
+Minecraft color codes also work, instead of using color sign `§`, replace it with `&`. For example, `&a` would display green text after it. <br>
 
-If you have problem using the plugin, please take a look at the [Wiki page](https://github.com/BlwCreepr15i/ServerMOTD/wiki).
-##
+`player-count` - The maximum player the server would handle. <br>
+
+`min-player-count` - The minimum online player the MOTD page would show. <br>
+`max-player-count` - The maximum online player the MOTD page would show. <br> 
+(Please note that if you want the MOTD menu to show the accurate online player at the moment, put 0 for both min and max. You may not leave them empty!) <br>
+
+`version-message` - The message that a player would see when pinging the MOTD menu with the wrong version. <br> 
+(Note: This is bugged currently, and player would see it even when connecting with the right minecraft version)
 ### Dependencies
 The plugin code is using several APIs as dependencies:
 - [Bungeecord API by SpigotMC](https://github.com/SpigotMC/BungeeCord)
